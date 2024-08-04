@@ -26,4 +26,4 @@ COPY . /app
 EXPOSE 8521
 
 # Run app.py when the container launches
-CMD ["streamlit", "run", "slot_car_rim_app.py", "--server.port", "8521"]
+CMD ["streamlit", "run", "mega_shaper_app.py", "--server.port", "8521"]
