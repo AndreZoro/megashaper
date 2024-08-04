@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  streamlit-shaper-api:
+    build:
+      context: .
+    ports:
+      - "8520:8520"
+    restart: always
