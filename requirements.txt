@@ -1,5 +1,5 @@
+bokeh==3.3.4
 numpy==1.26.4
-cadquery==2.4.0
 pyvista
 stpyvista
 streamlit

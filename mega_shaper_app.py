@@ -2,11 +2,8 @@ import base64
 import streamlit as st
 import pyvista as pv
 
-try:
-    from pyvista import themes
-    pv.set_plot_theme(themes.DarkTheme())
-except:
-    print("Was not able to load pyvista dark theme.")
+from pyvista import themes
+pv.set_plot_theme(themes.DarkTheme())
 
 from stpyvista import stpyvista
 import tempfile
