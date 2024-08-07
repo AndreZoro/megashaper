@@ -31,7 +31,7 @@ whl_dia = 20
 messages = []
 
 
-@st.cache_data
+@st.cache_data(max_entries=3)
 def get_rim(payload):
     payload["geo_part"] = "rim"
     endpoint = st.secrets.connections.shaper_geo_api.url + "/v1/small_rim"
@@ -59,7 +59,7 @@ def get_rim(payload):
     return mesh, stl_data, data["message"]
 
 
-@st.cache_data
+@st.cache_data(max_entries=3)
 def get_tire(
     whl_dia,
     whl_wdt,
